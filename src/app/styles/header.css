@@ -1,5 +1,14 @@
-.App {
-  text-align: center;
+.popcorn-header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.search-bar {
+  padding-left: 10px;
+  height: 20px;
+  width: 50%;
 }
 
 .App-logo {

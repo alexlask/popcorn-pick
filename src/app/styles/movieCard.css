@@ -1,0 +1,36 @@
+.movie-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px auto;
+  max-width: 600px;
+}
+
+.movie-card-poster-container {
+  flex: 0 0 150px;
+  overflow: hidden;
+}
+
+.movie-card-poster {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card-info {
+  padding: 16px;
+  flex: 1;
+}
+
+.movie-card-title {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.movie-card-detail {
+  margin: 4px 0;
+  color: #555;
+}

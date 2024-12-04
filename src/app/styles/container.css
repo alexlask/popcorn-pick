@@ -1,0 +1,6 @@
+.container {
+  border: 1px solid var(--ipt-base-border-color, rgba(0, 0, 0, 0.12));
+  border-radius: var(--ipt-cornerRadius, 4px);
+  gap: "16px";
+  padding: "16px";
+}
