@@ -2,17 +2,34 @@ import axios from "axios";
 
 const apiKey = "e73d0ce5";
 
-export const fetchMovies = async () => {
+let page = 1;
+
+export const getPage = () => {
+  return page;
+};
+
+export const incrementPage = () => {
+  page++;
+  return page;
+};
+
+export const decrementPage = () => {
+  page--;
+  return page;
+};
+
+export const fetchMovies = async (page) => {
   try {
     const response = await axios.get("http://www.omdbapi.com/", {
       params: {
         s: "movie",
-        page: 1,
+        page,
         apiKey: apiKey,
       },
     });
 
     let data1 = response.data;
+    console.log(data1);
     console.log(data1.Search);
 
     return data1.Search;
