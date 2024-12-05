@@ -32,9 +32,26 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.search-button {
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  border: white;
+}
+.search-button a:hover {
+  color: red;
+  cursor: pointer;
+}
+.search-button-text {
+  font-size: large;
+}
 
 .App-link {
   color: #61dafb;
+}
+
+a {
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {

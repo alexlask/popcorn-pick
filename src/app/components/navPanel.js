@@ -1,13 +1,20 @@
-import { getPage, incrementPage } from "../features/Search";
 import "../styles/NavPanel.css";
+import { useState } from "react";
 
 const NavPanel = ({ setPage, page }) => {
+  const incrementOne = () => {
+    console.log("Increment one");
+    setPage(page + 1);
+  };
+  const decrementOne = () => {
+    setPage(page - 1);
+  };
+
   return (
     <div className="NavContainer">
-      <button onClick={() => getPage() - 1}>⬅</button>
-      <input type="text" readOnly />
-      <button onClick={() => incrementPage()}>➡</button> */
-      <button onClick={() => setPage(page++)}>test</button>
+      <button onClick={decrementOne}>⬅</button>
+      <p onChange="">{page}</p>
+      <button onClick={incrementOne}>➡</button>
     </div>
   );
 };

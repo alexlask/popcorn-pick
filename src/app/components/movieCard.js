@@ -1,6 +1,12 @@
 import "../styles/movieCard.css";
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({
+  movie,
+  addFavorite,
+  removeFavorite,
+  isFavorite,
+  inFavorites,
+}) => {
   if (!movie) return <div>No movie data available</div>;
 
   return (
@@ -26,6 +32,15 @@ const MovieCard = ({ movie }) => {
         <p className="movie-card-detail">
           <strong>IMDb ID:</strong> {movie.imdbID}
         </p>
+        {inFavorites ? (
+          <button onClick={() => removeFavorite(movie)}>
+            🗑 Remove from Favorites
+          </button>
+        ) : (
+          <button onClick={() => addFavorite(movie)}>
+            🌟 Add to Favorites
+          </button>
+        )}
       </div>
     </div>
   );
