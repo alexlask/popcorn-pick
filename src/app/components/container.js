@@ -1,5 +1,4 @@
 import "../styles/container.css";
-import { fetchMovies } from "../features/Search";
 import MovieCard from "./movieCard";
 
 function Container({ movies, addFavorite, removeFavorite, favorites }) {
@@ -11,7 +10,6 @@ function Container({ movies, addFavorite, removeFavorite, favorites }) {
   return (
     <div className="container">
       <ol>
-        {/* <MovieCard movie={movies[0]} /> */}
         {movies.map((movie) => {
           return (
             <div key={movie.imdbID}>

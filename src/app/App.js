@@ -3,7 +3,6 @@ import Container from "./components/container";
 import Header from "./components/header";
 import { fetchMovies } from "./features/Search";
 import NavPanel from "./components/navPanel";
-import { getPage } from "./components/navPanel";
 import Favorites from "./components/Favorites";
 import { Route, Routes, useLocation } from "react-router-dom";
 

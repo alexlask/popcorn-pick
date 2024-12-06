@@ -1,5 +1,4 @@
 import "../styles/NavPanel.css";
-import { useState } from "react";
 
 const NavPanel = ({ setPage, page }) => {
   const incrementOne = () => {
